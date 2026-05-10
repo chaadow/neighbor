@@ -6,7 +6,7 @@ module Neighbor
       require "active_record/connection_adapters/abstract_mysql_adapter"
 
       # ensure schema can be dumped
-      ActiveRecord::ConnectionAdapters::AbstractMysqlAdapter::NATIVE_DATABASE_TYPES[:vector] = {name: "vector"}
+      # ActiveRecord::ConnectionAdapters::AbstractMysqlAdapter::NATIVE_DATABASE_TYPES[:vector] = {name: "vector"}
 
       # ensure schema can be loaded
       unless ActiveRecord::ConnectionAdapters::TableDefinition.method_defined?(:vector)
